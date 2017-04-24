@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+   <HediffDef Name="addedPartApiniBasic" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(148,117,14)</defaultLabelColor>
+   </HediffDef>
+   
+   <!-- Added body parts -->
+   
+   <HediffDef ParentName="addedPartApiniBasic">
+      <defName>ApiniSteelFLegH</defName>
+      <label>Apini steel front leg</label>
+      <spawnThingOnRemoved>ApiniSteelFLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>0.35</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <verbs>
+               <li>
+                  <verbClass>Verb_MeleeAttack</verbClass>
+                  <defaultCooldownTime>1.8</defaultCooldownTime>
+                  <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+                  <meleeDamageDef>Blunt</meleeDamageDef>
+               </li>
+            </verbs>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   
+   <HediffDef ParentName="addedPartApiniBasic">
+      <defName>ApiniDentureH</defName>
+      <label>Apini mandible denture</label>
+      <spawnThingOnRemoved>ApiniDenture</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Talking</capacity>
+               <offset>-0.15</offset>
+            </li>
+            <li>
+               <capacity>Eating</capacity>
+               <offset>-0.1</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartApiniBasic">
+      <defName>ApiniPegLegH</defName>
+      <label>Apini peg leg</label>
+      <spawnThingOnRemoved>ApiniPegLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>0.7</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+
+   <HediffDef ParentName="addedPartApiniBasic">
+      <defName>ApiniAntennaBandageH</defName>
+      <label>Apini antenna bandage</label>
+      <spawnThingOnRemoved>ApiniAntennaBandage</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Hearing</capacity>
+               <offset>-0.5</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+
+</Defs>

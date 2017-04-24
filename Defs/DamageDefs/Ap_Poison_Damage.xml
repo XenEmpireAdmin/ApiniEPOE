@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>Apini_Stinger</defName>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+    <label>stinger poison attack</label>
+    <externalViolence>true</externalViolence>	
+    <makesBlood>true</makesBlood>
+    <harmsHealth>false</harmsHealth>	
+    <deathMessage>{0} has died from bee stings. OUCH!</deathMessage>
+    <hediff>Apini_Stinger</hediff>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <additionalHediffs>
+      <li>
+        <hediff>ApiniPoisonBuild</hediff>
+        <severityPerDamageDealt>0.016</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <explosionCellMote>Mote_BlastEMP</explosionCellMote>	
+    <incapChanceMultiplier>1.5</incapChanceMultiplier>	
+  </DamageDef>
+</Defs>

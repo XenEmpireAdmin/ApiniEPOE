@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+	<!-- Vanilla base -->
+
+	<ThingDef Name="BodyPartBase" Abstract="True">
+		<label>body part</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<tradeTags>
+			<li>BodyPartOrImplant</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<pathCost>10</pathCost>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartBase" Name="BodyPartNaturalBase" Abstract="True">
+		<thingCategories>
+			<li>BodyPartsNatural</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- EPOE -->
+
+	<ThingDef Name="Advanced" ParentName="BodyPartBase" Abstract="True">
+		<tradeTags>
+			<li>AdvancedProstheses</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AdvancedProstheses</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- Added body parts -->
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedApiniFLeg</defName>
+		<label>Enhanced apini foreleg</label>
+		<description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>7000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedApiniBLeg</defName>
+		<label>enhanced apini back leg</label>
+		<description>Impressing technology allows the user to move around faster than ever.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>7000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedApiniWing</defName>
+		<label>Cyber-enhanced techno-magical-servo wings</label>
+		<description>Amaze! Such bee! Zoom!</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>ApiniCyAntenna</defName>
+		<label>Apini cyber antennae</label>
+		<description>Do you know what people are talking about across the village? I do. I HEAR EVERYTHING!</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>ApiniCyMandible</defName>
+		<label>Apini cyber mandible</label>
+		<description>The voice this jaw creates is so beautiful that even some mechanoids stop to listen to this sound. Also noms food gud.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>4000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>ApiniCyEye</defName>
+		<label>apini bionic eye</label>
+		<description>This advanced piece of technology allows the user to perfectly see in the dark as well as to see through walls.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedApiniPronotum</defName>
+		<label>Bionic enhanced pronotum</label>
+		<description>This cybernetic pronotum enhancement increases blood filtration and supplies a boost of insectoid adrenaline equivalent, enhancing the user's speed.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>8000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>ApiniCyBrain</defName>
+		<label>Apini cyberbrain enhancement</label>
+		<description>Incredible advances in microprocessor technology allows you to enhance your mental faculties! Try saying that 5 times fast! You can with this brain boost!</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+		<ThingDef ParentName="Advanced">
+		<defName>ApiniCyberStinger</defName>
+		<label>Apini cybernetic stinger implant</label>
+		<description>Someone decided to gift the Apini with what their creators took away... BIG NASTY STINGERS!</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="Advanced">
+		<defName>ApiniCyStomach</defName>
+		<label>Apini enhanced stomach</label>
+		<description>A fancy techno-stomach for your apini colonist. Gobble that honey!</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+		<ThingDef ParentName="Advanced">
+		<defName>ApiniCyHeart</defName>
+		<label>Apini cyber heart</label>
+		<description>It's the heart of any creature!... A Heart! Duh! This one is all techno-fancy. Oh yeah, and it's for Apini.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+</ThingDefs>

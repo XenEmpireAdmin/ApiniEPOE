@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+  <ThingDef Name="ApiniBodyPartBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+			<Beauty>-6</Beauty>
+		</statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <tradeTags>
+      <li>BodyPartOrImplant</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <pathCost>10</pathCost>
+  </ThingDef>
+
+  <ThingDef ParentName="ApiniBodyPartBase" Name="ApiniBodyPartNaturalBase" Abstract="True">
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+		<statBases>
+			<DeteriorationRate>4.0</DeteriorationRate>
+		</statBases>
+  </ThingDef>
+
+
+
+	<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniFrontLeg</defName>
+		<label>apini front leg</label>
+		<description>Various forms of legs exist as means of locomotion, in various configurations - digitigrade, plantigrade, I really liked my teacher in second grade.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+		<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniBackLeg</defName>
+		<label>leg</label>
+		<description>Rumour has it that Apini legs are a delicacy on certain urbworlds, supposedly tasting like grade-A Honey marinated crab...</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniWing</defName>
+		<label>Apini wing</label>
+		<description>Wings from an Apini. Why would you take these off? You probably pulled wings off flies as a kid, didn't you? Meanie.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniStomach</defName>
+		<label> Apini stomach</label>
+		<description>Digests food and turns it into energy and nutrients. This one comes from an Apini... It's rather... strange.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniHeart</defName>
+		<label>Apini heart</label>
+		<description>Supplies blood and oxygen to all parts of the body. Ready to find a new owner. Provided that new owner is an Apini. These is an insect heart after all.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniEye</defName>
+		<label>Apini eyeball</label>
+		<description>Absorbs light, which lets a person (an Apini person in this case) know what's around them.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniAntenna</defName>
+		<label>Apini antennae</label>
+		<description>Picks up vibrations in the air, and other sensory data. Functions may variously include sensing touch, air motion, heat, vibration (sound), and especially smell or taste.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ApiniBodyPartNaturalBase">
+		<defName>ApiniMandible</defName>
+		<label>Apini Mandible</label>
+		<description>As opposed to teeth, insects generally have Mandibles. Their function is typically to grasp, crush, or cut the insect’s food, or to defend against predators or rivals.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+</ThingDefs>

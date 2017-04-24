@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+	<ThingDef Name="Basic" ParentName="BodyPartBase" Abstract="True">
+		<tradeTags>
+			<li>BasicProstheses</li>
+		</tradeTags>
+		<thingCategories>
+			<li>BasicProstheses</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- Added body parts -->
+
+
+	<ThingDef ParentName="Basic">
+		<defName>ApiniDenture</defName>
+		<label>Mandible denture</label>
+		<description>Replaces a missing mandible with a wooden one.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="Basic">
+		<defName>ApiniPegLeg</defName>
+		<label>Apini peg leg</label>
+		<description>Replaces a missing rear leg with a wooden one. Arr matey.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+		<ThingDef ParentName="Basic">
+		<defName>ApiniSteelFLeg</defName>
+		<label>Apini peg leg</label>
+		<description>Replaces a missing foreleg with a mechanical steel one. These act as an apini's arms.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Basic">
+		<defName>ApiniAntennaBandage</defName>
+		<label>Antenna bandage</label>
+		<description>Covers a missing antennae spot. Almost looks like a phylactery.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+
+</ThingDefs>

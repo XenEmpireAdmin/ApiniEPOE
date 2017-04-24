@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecipeDefs>
+
+	<RecipeDef Name="SurgeryApiniOrgan" ParentName="SurgeryFlesh" Abstract="True">
+		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
+		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
+		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+		<recipeUsers>
+			<li>Apini</li>
+		</recipeUsers>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryApiniOrgan">
+		<defName>InstallApCyBrain</defName>
+		<label>install Apini Brain Enhancement</label>
+		<description>Installs brain enhancement kit.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing cyberbrain.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniCyBrain</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniCyBrain</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniCyBrain</addsHediff>
+		<researchPrerequisite>BrainSurgery</researchPrerequisite>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryApiniOrgan">
+		<defName>InstallApCyStomach</defName>
+		<label>install cyber stomach</label>
+		<description>Installs a cyber stomach.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing cyber stomach.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniCyStomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniCyStomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniCyStomach</addsHediff>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="SurgeryApiniOrgan">
+		<defName>InstallApCyHeart</defName>
+		<label>install cyber heart</label>
+		<description>Installs an artificial heart.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing an artificial heart.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniCyHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniCyHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniCyHeart</addsHediff>
+	</RecipeDef>
+
+</RecipeDefs>

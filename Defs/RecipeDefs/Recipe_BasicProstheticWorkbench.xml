@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecipeDefs>
+
+	<RecipeDef Abstract="True" Name="RecipeBasicProsthesisApini">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+		<workAmount>2500</workAmount>
+		<recipeUsers>
+		<li>TableBasicProsthetic</li>
+		</recipeUsers>
+		
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBasicProsthesisApini">
+		<defName>CreateSteelApFLeg</defName>
+		<label>Craft steel apini foreleg</label>
+		<description>Crafts a steel foreleg for an apini.</description>
+		<jobString>Crafting prosthesis.</jobString>
+		<soundWorking>EPOEAssembling</soundWorking>
+		<products>
+			<ApiniSteelFLeg>1</ApiniSteelFLeg>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="RecipeBasicProsthesisApini">
+		<defName>CreateApDenture</defName>
+		<label>Craft apini mandible denture</label>
+		<description>Crafts a cheap denture from wood logs. Easy to make.</description>
+		<jobString>Crafting prosthesis.</jobString>
+		<soundWorking>Recipe_MakeWoodPlanks_Hand</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniDenture>1</ApiniDenture>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="RecipeBasicProsthesisApini">
+		<defName>CreateAntennaBandage</defName>
+		<label>Craft antenna bandage</label>
+		<description>Tailors an antenna bandage from fabric.</description>
+		<jobString>Crafting prosthesis.</jobString>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<products>
+			<ApiniAntennaBandage>1</ApiniAntennaBandage>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+</RecipeDefs>

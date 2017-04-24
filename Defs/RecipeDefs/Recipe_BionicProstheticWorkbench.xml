@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecipeDefs>
+
+	<RecipeDef Abstract="True" Name="RecipeApini">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<soundWorking>EPOEAssembling</soundWorking>
+		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+		<workAmount>8000</workAmount>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+		<recipeUsers>
+		<li>TableBionics</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniEye</defName>
+		<label>Craft Apini bionic eye</label>
+		<description>Crafts a bionic eye for an Apini.</description>
+		<jobString>Crafting Apini.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>55</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniCyEye>1</ApiniCyEye>
+		</products>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniArm</defName>
+		<label>Craft Apini arm</label>
+		<description>Upgrades a simple prosthetic arm using extracted DNA.</description>
+		<jobString>Crafting Apini.</jobString>
+		<products>
+			<AdvancedApiniFLeg>1</AdvancedApiniFLeg>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticArm</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+
+
+	<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniLeg</defName>
+		<label>Craft Apini leg</label>
+		<description>Upgrades a simple prosthetic leg using plasteel and components.</description>
+		<jobString>Crafting Apini.</jobString>
+		<products>
+			<AdvancedApiniBLeg>1</AdvancedApiniBLeg>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticLeg</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniAnt</defName>
+		<label>Craft Apini cyber antenna</label>
+		<description>Crafts an Apini enhanced antennae.</description>
+		<jobString>Crafting Apini.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniCyAntenna>1</ApiniCyAntenna>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniJaw</defName>
+		<label>Craft Apini cyber-mandible</label>
+		<description>Crafts a cyber-mandible for an apini.</description>
+		<jobString>Crafting Apini cyber-mandible.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniCyMandible>1</ApiniCyMandible>
+		</products>
+	</RecipeDef>
+
+		<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniWing</defName>
+		<label>Craft Apini cyber-wing</label>
+		<description>Crafts a cyber-wing for an apini.</description>
+		<jobString>Crafting Apini cyber-wing.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdvancedApiniWing>1</AdvancedApiniWing>
+		</products>
+	</RecipeDef>
+
+	
+		<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniHeart</defName>
+		<label>Craft Apini cyberheart</label>
+		<description>Crafts an Apini cyberheart</description>
+		<jobString>Crafting Apini cyber organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniCyHeart>1</ApiniCyHeart>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniPronotum</defName>
+		<label>Craft Apini pronotum</label>
+		<description>Crafts an Apini cyber-pronotum</description>
+		<jobString>Crafting Apini cyber organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdvancedApiniPronotum>1</AdvancedApiniPronotum>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniStinger</defName>
+		<label>Craft Apini cyber-stinger</label>
+		<description>Crafts a cyber stinger for an Apini.</description>
+		<jobString>Crafting Apini cyber stinger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniCyberStinger>1</ApiniCyberStinger>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniStomach</defName>
+		<label>Craft Apini cyber stomach</label>
+		<description>Crafts an apini cyber stomach.</description>
+		<jobString>Crafting Apini cyber organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniCyStomach>1</ApiniCyStomach>
+		</products>
+	</RecipeDef>
+	
+		<RecipeDef ParentName="RecipeApini">
+		<defName>CreateApiniBrain</defName>
+		<label>Craft apini brain cybernetics</label>
+		<description>Crafts a brain enhancement for an apini.</description>
+		<jobString>Crafting Apini cyber organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ApiniCyBrain>1</ApiniCyBrain>
+		</products>
+		</RecipeDef>
+		
+	
+</RecipeDefs>

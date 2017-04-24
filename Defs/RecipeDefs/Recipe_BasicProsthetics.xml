@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef Name="SurgeryBApini" ParentName="SurgeryFlesh" Abstract="True">
+		<recipeUsers>
+			<li>Apini</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryBApini">
+		<defName>InstallSteelFleg</defName>
+		<label>install steel foreleg</label>
+		<description>Installs steel foreleg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing steel foreleg.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniSteelFLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniSteelFLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>FrontLeftApiniInsectLeg</li>
+			<li>FrontRightApiniInsectLeg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniSteelFLegH</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryBApini">
+		<defName>InstallEyePatch</defName>
+		<label>install eye patch</label>
+		<description>Installs eye patch.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing eye patch.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EyePatch</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EyePatch</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftEye</li>
+			<li>RightEye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EyePatch</addsHediff>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallApDenture</defName>
+		<label>install apini denture</label>
+		<description>Installs a simple mandible denture.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing an apini denture.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniDenture</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniDenture</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftMandible</li>
+			<li>RightMandible</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniDentureH</addsHediff>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallApPegLeg</defName>
+		<label>install apini peg (rear)leg</label>
+		<description>Installs a wooden leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing peg leg.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PegLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>PegLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MiddleLeftInsectLeg</li>
+			<li>MiddleRightInsectLeg</li>
+			<li>RearLeftInsectLeg</li>
+			<li>RearRightInsectLeg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniPegLegH</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryBApini">
+		<defName>InstallApAntenBandage</defName>
+		<label>install antenna bandage</label>
+		<description>Installs an antenna bandage.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing ear bandage.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniAntennaBandage</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniAntennaBandage</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftEar</li>
+			<li>RightEar</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniAntennaBandageH</addsHediff>
+	</RecipeDef>
+
+</RecipeDefs>

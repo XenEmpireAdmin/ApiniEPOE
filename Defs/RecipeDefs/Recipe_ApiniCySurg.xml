@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef Name="SurgeryAdvancedApini" ParentName="SurgeryFlesh" Abstract="True">
+		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
+		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
+		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<recipeUsers>
+			<li>Apini</li>
+</recipeUsers>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallAdvApFleg</defName>
+		<label>install advanced foreleg</label>
+		<description>Installs advanced foreleg</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing advanced foreleg.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedApiniFLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedApiniFLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>FrontLeftApiniInsectLeg</li>
+			<li>FrontRightApiniInsectLeg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedApiniFLeg</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallAdvApBLeg</defName>
+		<label>install advanced rear leg</label>
+		<description>Installs advanced rear leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing advanced rear leg.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedApiniBLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedApiniBLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftLeg</li> 
+			<li>RightLeg</li> 
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedApiniBLeg</addsHediff>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallCyberApWing</defName>
+		<label>install cyber apini wing</label>
+		<description>Installs cyber wing.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing apini.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedApiniWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedApiniWing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>BeeLeftWing</li>
+			<li>BeeRightWing</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedApiniWing</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallBionicApEye</defName>
+		<label>install bionic apini eye</label>
+		<description>Installs bionic eye.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic eye.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniCyEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniCyEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftEye</li> 
+			<li>RightEye</li> 
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniCyEye</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallApCyberAntenna</defName>
+		<label>install apini cyber antenna</label>
+		<description>Installs an apini cyber antenna.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing an apini cyber antenna.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniCyAntenna</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniCyAntenna</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftAntenna</li>
+			<li>RightAntenna</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniCyAntenna</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallCyberApMandible</defName>
+		<label>install bionic mandible implant</label>
+		<description>Installs bionic mandible.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic mandible.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniCyMandible</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniCyMandible</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LeftMandible</li>
+			<li>RightMandible</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniCyMandible</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallBionicApPronotum</defName>
+		<label>install bionic pronotum implant</label>
+		<description>Installs bionic pronotum.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing bionic pronotum.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedApiniPronotum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedApiniPronotum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pronotum</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedApiniPronotum</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryAdvancedApini">
+		<defName>InstallApCyberStinger</defName>
+		<label>Install cyber stinger</label>
+		<description>installs cyber stinger.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing cyber stinger.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ApiniCyberStinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ApiniCyberStinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Thorax</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ApiniCyberStinger</addsHediff>
+	</RecipeDef>
+
+</RecipeDefs>

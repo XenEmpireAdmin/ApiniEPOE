@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+   <HediffDef Name="ApiniPartPropsBase" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+   </HediffDef>
+   
+   <!-- Natural body parts -->
+   
+   <HediffDef ParentName="ApiniPartPropsBase">
+      <defName>ApiniStomachH</defName>
+      <label>APini stomach</label>
+      <spawnThingOnRemoved>ApiniStomach</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="ApiniPartPropsBase">
+      <defName>ApiniHeartH</defName>
+      <label>Apini heart</label>
+      <spawnThingOnRemoved>ApiniHeart</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   
+   <HediffDef ParentName="ApiniPartPropsBase">
+      <defName>ApiniWingH</defName>
+      <label>Apini wing</label>
+      <spawnThingOnRemoved>ApiniWing</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="ApiniPartPropsBase">
+      <defName>ApiniFrontLegH</defName>
+      <label>Apini front leg</label>
+      <spawnThingOnRemoved>ApiniFrontLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="ApiniPartPropsBase">
+      <defName>ApiniBackLegH</defName>
+      <label>apini back leg</label>
+      <spawnThingOnRemoved>ApiniBackLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="ApiniPartPropsBase">
+      <defName>ApiniMandibleH</defName>
+      <label>Apini Mandible</label>
+      <spawnThingOnRemoved>ApiniMandible</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="ApiniPartPropsBase">
+      <defName>ApiniEyeH</defName>
+      <label>Apini eye</label>
+      <spawnThingOnRemoved>ApiniEye</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+
+</Defs>
