@@ -86,8 +86,10 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>LeftLeg</li> 
-			<li>RightLeg</li> 
+			<li>MiddleLeftInsectLeg</li>
+			<li>MiddleRightInsectLeg</li>
+			<li>RearLeftInsectLeg</li>
+			<li>RearRightInsectLeg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AdvancedApiniBLeg</addsHediff>
 	</RecipeDef>
