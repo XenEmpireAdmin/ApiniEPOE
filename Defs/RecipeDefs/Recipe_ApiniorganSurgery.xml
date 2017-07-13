@@ -2,8 +2,6 @@
 <RecipeDefs>
 
 	<RecipeDef Name="SurgeryApiniOrgan" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 		<recipeUsers>
@@ -128,7 +126,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Heart</li>
+			<li>InsectHeart</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ApiniCyHeart</addsHediff>
 	</RecipeDef>

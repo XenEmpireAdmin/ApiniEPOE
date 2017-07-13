@@ -2,8 +2,6 @@
 <RecipeDefs>
 
 	<RecipeDef Name="SurgeryAdvancedApini" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
 		<recipeUsers>
